@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;    
+}
+body {
+    /* overflow: hidden; */
+    min-height: 4000px;
+    margin-top: 17vh; 
+}
+.HEADER1 {
+    position: fixed;
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(255, 255, 255, 0.875);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.138);
+}
+.headerMain{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.CarAnimation{
+    width: 8vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    background-image: url("CarAnimation.png");
+    background-size: cover;
+    transition: .3s ease-in;
+}
+
+.headers1 {
+    height: 10vh;
+    width: 12vw;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    font-family: "Sankofa Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+.headers1:hover{
+    cursor: none;
+
+}
+
+.headers2 {
+    height: 5vh;
+    width: 45vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 999;
+}
+
+.headers3 {
+    height: 5vh;
+    width: 10vw;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headers3:hover {
+    cursor: pointer;
+}
+li{
+    transition: .1s ease-in;
+}
+li:hover{
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.menuall:hover {
+    transition: .2s ease-in;
+    cursor: pointer;
+    -webkit-background-clip: text;
+    font-size: 1.6rem;
+    -webkit-text-stroke: 1px #ffd343f1;
+    background-clip: text;
+    color: transparent;
+}
+
+.Menus {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerIcon1 {
+    height: 4vh;
+    width: 5vh;
+}
+
+.headerIcon2 {
+    height: 4vh;
+    width: 5vh;
+}
+
+.headerIcon1:active, .headerIcon2:active {
+    height: 3.5vh;
+    width: 2.5vw;
+    transition: .1s ease-in;
+}
+
+.bgcircle1 {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: #ffd343d3;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.bgcircle2 {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    background: linear-gradient( #fff, #46c1ff6f);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.posterBox1 {
+    width: 50vw;
+    height: 50vh;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-left: 20vh;
+    margin-top: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.604);
+    z-index: 0;
+    position: relative; /* Ensures it's positioned relative to the normal flow */
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 5px;
+    border-radius: 30px;
+    z-index: -1;
+    transition: 1s ease-in;
+}
+.leftbtnimg, .rightbtnimg{
+    z-index: 3;
+    height: 7vh;
+    width: 4vw;
+    color: rgb(255, 255, 255);
+}
+.leftbtnimg:hover, .rightbtnimg:hover{
+    cursor: pointer;
+}
+.Posterbtn{
+    height: 5vh;
+    width: 14vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    transform: translate(110%, 400%);
+}
+.btnimgslider{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.signup,.login{
+    height: 5vh;
+    width: 6vw;
+    background: linear-gradient(rgba(52, 181, 255, 0.645), rgba(255, 255, 255, 0.629));
+    border-radius: 10px;
+}
+.signup:hover, .login:hover{
+    cursor: pointer;
+}
+.sloganBox{
+    height: 65vh;
+    width: 30vw;
+    border-radius: 30px;
+    position: absolute;
+    top: 22%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding: 4vh;
+    font-size: 2.5rem;
+    right: 5%;
+}
+.Intitle{
+    font-family: "Sankofa Display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2rem
+    
+}
+.Indate1{
+    font-size: small;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.Inbgcircle{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: #ffef402d;
+    position: absolute;
+    top: 65%;
+    right: -10%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+}
+.bgDesign1{
+    height: 120vh;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.629), rgba(62, 158, 255, 0.284));
+    position: absolute;
+    top: 110%;
+    z-index: -1;
+}
+.appIcons{
+    height: 7vh;
+    width: 14vw;
+    /* background-color: green; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -4%;
+}
+#appicons{
+    height: 5vh;
+    width: 2.5vw;
+    /* background-color: white; */
+    /* position: absolute; */
+}
+.socialicons{
+    height: 4.5vh;
+    width: 2.25vw;
+}
+.socialicons:hover{
+    cursor: pointer;
+    opacity: .6;
+}
+.aboutEverything{
+    height: auto;
+    width: 60vw;
+    /* background-color: green; */
+    margin-left: 21%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 5%;
+}
+.intext{
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+.hlightext{
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(168, 255, 168);
+    color: white;
+}
+.genre{
+    margin-left: 24%;
+    position: absolute;
+    margin-top: 1%;
+}
+.genrecontainer{
+    height: 3vh;
+    width: 17vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30%;
+    align-items: center;
+}
+.genre1, .genre2, .genre3{
+    background-color: grey;
+    width: 5vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 10%;
+}
+.appIcons1{
+    height: 7vh;
+    width: 14vw;
+    /* background-color: green; */
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -2%;
+    margin-left: 64%;
+}
+.likepost{
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+    margin-left: 10%;
+    margin-top: 4%;
+    position: absolute;
+}
+.bgdesign7{
+    height: 20vh;
+    width: 10vw;
+    background: linear-gradient(to right, white, grey);
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-top: 2%;
+    position: absolute;
+    z-index: -7;
+}
+.postContainer{
+    height: 40vh;
+    width: 48vw;
+    /* position: absolute; */
+    /* background-color: pink; */
+    margin-left: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2%;
+}
+.post1, .post2, .post3{
+    height: 35vh;
+    width: 14vw;
+    background-color: rgb(218, 218, 218);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.PostMedia1, .PostMedia2, .PostMedia3{
+    height: 28vh;
+    width: 14vw;
+    background-color: grey;
+}
+footer{
+    margin-top: 5%;
+    height: 60vh;
+    position: relative;
+    width: 100%;
+    background-color: rgb(0, 0, 67);
+    box-shadow: 15px 15px 54px rgba(0, 0, 0, 0.837);
+}
+.footerP1{
+    height: 10vh;
+    width: 12vw;
+    color: white;
+    display: flex;
+    position: absolute;
+    font-family: "Sankofa Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin-left: 15%;
+    margin-top: 6%;
+}
+.boxhead1{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.footerBox1{
+    color: white;
+    position: absolute;
+    margin-left: 30%;
+    font-weight: lighter;
+    font-size: .8rem;
+    margin-top: 4%;
+}
+.footerl1{
+    list-style-type: none;
+}
+.footerBox2{
+    color: white;
+    position: absolute;
+    margin-left: 40%;
+    font-weight: lighter;
+    font-size: .8rem;
+    margin-top: 4%;
+}
+.footerBox3{
+    color: white;
+    position: absolute;
+    margin-left: 51%;
+    font-weight: lighter;
+    font-size: .8rem;
+    margin-top: 4%;
+}
+.footerBox4{
+    color: white;
+    position: absolute;
+    margin-left: 61%;
+    font-weight: lighter;
+    font-size: .8rem;
+    margin-top: 4%;
+}
+.footerBox5{
+    color: white;
+    position: absolute;
+    margin-left: 76%;
+    font-weight: lighter;
+    font-size: .8rem;
+    margin-top: 4%;
+}
+.iconboxs{
+    height: 4vh;
+    width: 7vw;
+    /* background-color: white; */
+    position: absolute;
+    margin-left: 76%;
+    margin-top: 6.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#socialicon{
+    height: 4vh;
+    width: 2vw;
+    color: white;
+    transition: .1s ease-in;
+}
+.queryhead{
+    position: absolute;
+    margin-top: 15%;
+    color: white;
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    margin-left: 33%;
+}
+#socialicon:hover{
+    cursor: pointer;
+    color: rgb(181, 181, 255);
+    height: 4.2vh;
+    width: 2.1vw;
+}
+textarea {
+    width: 50%;
+    height: 10vh;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 18%;
+}
+.mailq{
+    position: absolute;
+    height: 5vh;
+    width: 15vw;
+    border-radius:5px;
+    margin-left: 38%;
+    padding: 10px;
+    margin-top: 22%;
+}
+.buttonq{
+    /* position: absolute; */
+    height: 4.8vh;
+    width: 6vw;
+    border-radius: 5px;
+    margin-left: 54%;
+    border: none;
+    margin-top: 22.1%;
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: orange;
+    z-index: 100;
+}
+.buttonq:hover{
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.626);
+    position: absolute;
+    margin-left: 13%;
+    margin-top: 13%;
+    font-size: .8rem;
+}
